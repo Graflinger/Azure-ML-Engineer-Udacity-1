@@ -6,9 +6,14 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+This projects uses a Bank marketing dataset, which contains data of bank clients and their binary responses (Yes/No) to a marketing strategy. The aim of the projects is to predict wether a customer would say Yes or No responding to the marketing campaign.
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+Two ways creating such a model were created using the Azure ML Pipeline
+
+- AutoML using a Voting Esemble as best fitted model
+- Hyperparameter optimizing via Hyperdrive with a logistic regression model
+
+Both models performed very similar, with a accuracy of 91.8% from the AutoML model and 91.2% from the logistic regression model
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
